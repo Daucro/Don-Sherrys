@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import Link from "next/link";
+import "../styling/carousel.css";
 
 interface NavButtonProps {
   text: string;
@@ -9,10 +10,15 @@ export default function NavButton(props: NavButtonProps) {
   return (
     <Link href={`/${props.link}`}>
       <Typography
-        className='NavButtonHeader'
-        variant='h6'
-        component='div'
-        sx={{ flexGrow: 1, margin: "2px",padding:"4px", backgroundColor:'gray', border:'solid black 2px',borderRadius:'6px' }}
+        className="NavButtonHeader"
+        variant="h6"
+        component="div"
+        sx={{
+          flexGrow: 1,
+          margin: "2px",
+          padding: "4px",
+          backgroundColor: "gray",
+        }}
       >
         {props.text}
       </Typography>

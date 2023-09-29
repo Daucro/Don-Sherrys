@@ -1,0 +1,101 @@
+.Center {
+  text-align: center;
+  text-decoration: underline black 2px;
+  margin: 5%;
+}
+.CenterParagraph {
+  text-align: center;
+  border: solid black 2px;
+  margin: 5px;
+}
+p {
+  text-align: center;
+}
+.slidePhoto {
+  height: 325px;
+  width: 1625px;
+  width: clamp(10px, 50%, 400px);
+}
+.slideContainer {
+  display: flex;
+  justify-content: center;
+}
+.NavButtonHeader:hover {
+  text-decoration: underline black;
+}
+.NavButtonheader {
+  background-color: grey;
+}
+.LoginButton:hover {
+  background-color: black;
+  text-decoration: underline white;
+}
+.MenuIcon:hover {
+  background-color: black;
+}
+.BookingContainer {
+  display: flex;
+  margin: 5%;
+  background-color: grey;
+}
+.BookingLeftTop {
+  display: flex;
+  flex-basis: 25%;
+  align-self: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.BookingLeftBottom {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  align-self: flex-start;
+  flex-basis: 25%;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 10px;
+}
+.BookingContainer2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  background-color: grey;
+  padding: 15px;
+}
+.BookingContainer2Left {
+  display: flex;
+  flex-basis: 50%;
+  margin-right: 10px;
+}
+.BookingContainer2Center {
+  display: flex;
+  flex-basis: 25%;
+}
+.BookingParagraph {
+  text-align: center;
+  align-self: center;
+  flex-basis: 25%;
+}
+.BookingContainer3 {
+  display: flex;
+  margin: 5%;
+  background-color: grey;
+  padding: 15px;
+}
+.BookingContainer3Left {
+  display: flex;
+  justify-content: space-evenly;
+}
+.BookingContainer3Right {
+  display: flex;
+  justify-content: space-evenly;
+}
+.BookingContainer4 {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: grey;
+  padding: 15px;
+}
