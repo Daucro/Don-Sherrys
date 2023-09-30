@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import SlideShow from "./components/carousel";
+import GFooter from "./components/StickyFooter";
+import StickyFooter from "./components/StickyFooter";
 
 export default function Home() {
   return (
@@ -62,12 +64,15 @@ export default function Home() {
       <div className="BookingContainer4">
         <div className="BookingContainer4Left">
           <img src="https://picsum.photos/574/430" />
+          <figcaption>Lorenia</figcaption>
         </div>
         <div className="BookingContainer4Center">
           <img src="https://picsum.photos/574/430" />
+          <figcaption>Divinia</figcaption>
         </div>
         <div className="BookingContainer4Right">
           <img src="https://picsum.photos/574/430" />
+          <figcaption>Seleria</figcaption>
         </div>
       </div>
     </main>

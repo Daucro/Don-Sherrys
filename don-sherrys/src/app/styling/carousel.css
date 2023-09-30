@@ -1,7 +1,12 @@
+th {
+  text-align: center;
+}
 .Center {
   text-align: center;
   text-decoration: underline black 2px;
   margin: 5%;
+  align-items: center;
+  align-self: center;
 }
 .CenterParagraph {
   text-align: center;
@@ -98,4 +103,35 @@ p {
   gap: 15px;
   background-color: grey;
   padding: 15px;
+}
+.BookingContainer4Left {
+  text-align: center;
+  font-size: 24px;
+}
+.BookingContainer4Center {
+  text-align: center;
+  font-size: 24px;
+}
+.BookingContainer4Right {
+  text-align: center;
+  font-size: 24px;
+}
+.GlobalFooter {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  background-color: grey;
+  padding: 15px;
+  text-align: center;
+}
+.FooterLeft {
+  text-align: left;
+}
+.FooterCenter {
+  text-align: center;
+}
+.FooterRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
