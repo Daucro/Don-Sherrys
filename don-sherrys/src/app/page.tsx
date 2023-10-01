@@ -25,7 +25,6 @@ export default function Home() {
           </p>
         </div>
         <div className="BookingLeftBottom">
-          <img src="https://picsum.photos/351/351" />
           <p className="CenterParagraph">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -33,6 +32,7 @@ export default function Home() {
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,
           </p>
+          <img src="https://picsum.photos/351/351" />
         </div>
         <img className="BookingPhoto" src="https://picsum.photos/714/482" />
       </div>
@@ -61,6 +61,7 @@ export default function Home() {
           <img src="https://picsum.photos/351/351" />
         </div>
       </div>
+
       <div className="BookingContainer4">
         <div className="BookingContainer4Left">
           <img src="https://picsum.photos/574/430" />

@@ -40,8 +40,8 @@ p {
 }
 .BookingContainer {
   display: flex;
-  margin: 5%;
   background-color: grey;
+  justify-content: space-evenly;
 }
 .BookingLeftTop {
   display: flex;
@@ -53,25 +53,20 @@ p {
 }
 .BookingLeftBottom {
   display: flex;
-  flex-direction: column-reverse;
-  text-align: center;
-  align-self: flex-start;
   flex-basis: 25%;
-  flex-wrap: wrap-reverse;
+  align-self: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 10px;
 }
 .BookingContainer2 {
   display: flex;
-  justify-content: space-between;
-  margin: 5%;
+  justify-content: space-evenly;
   background-color: grey;
-  padding: 15px;
 }
 .BookingContainer2Left {
   display: flex;
   flex-basis: 50%;
-  margin-right: 10px;
 }
 .BookingContainer2Center {
   display: flex;
@@ -84,9 +79,8 @@ p {
 }
 .BookingContainer3 {
   display: flex;
-  margin: 5%;
   background-color: grey;
-  padding: 15px;
+  justify-content: space-evenly;
 }
 .BookingContainer3Left {
   display: flex;
@@ -97,12 +91,12 @@ p {
   justify-content: space-evenly;
 }
 .BookingContainer4 {
-  margin: 5%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 15px;
   background-color: grey;
-  padding: 15px;
+  padding: 1%;
+  margin: 1%;
 }
 .BookingContainer4Left {
   text-align: center;
@@ -119,7 +113,7 @@ p {
 .GlobalFooter {
   display: flex;
   justify-content: space-evenly;
-  width: auto;
+  width: 100%;
   background-color: grey;
   padding: 15px;
   text-align: center;
@@ -127,9 +121,7 @@ p {
 .FooterLeft {
   text-align: left;
 }
-.FooterCenter {
-  text-align: center;
-}
+
 .FooterRight {
   display: flex;
   flex-direction: column;
