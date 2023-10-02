@@ -1,6 +1,10 @@
-export default function Menu () {
+import TitlebarImageList from "@/app/components/menuimage";
 
-    return (
-   <h1>Hello World am I working yet</h1> 
-    )
+export default function Menu() {
+  return (
+    <>
+      <TitlebarImageList />
+      <h1 className="Center">Cooking that feels like Home</h1>
+    </>
+  );
 }
