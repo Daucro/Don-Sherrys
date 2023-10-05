@@ -36,7 +36,7 @@ export default function Navigation() {
             <NavButton text="Location" link="location" />
             <NavButton text="Menu" link="menu" />
             <Button className="LoginButton" color="inherit">
-              Login
+              Book Now
             </Button>
           </Box>
         </Toolbar>

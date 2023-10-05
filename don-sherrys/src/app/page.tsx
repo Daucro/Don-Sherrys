@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import SlideShow from "./components/carousel";
+import SlideShow from "./components/carouselhome";
 import GFooter from "./components/StickyFooter";
 import StickyFooter from "./components/StickyFooter";
 

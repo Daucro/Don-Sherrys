@@ -22,7 +22,8 @@ export default function Menu() {
         fontSize:'35px'
       }}>It is <b>important</b> to us to provide food that is delicious and meets your needs. In order to do so any dietary
       <b>restrictions</b> or <b>allergies</b> need to be disclosed at the time of booking your stay with us. This will give us the 
-      most amount of time to plan ahead of time if any special requirements need to be met.
+      most amount of time to plan ahead of time if any special requirements need to be met. We do not currently offer Lunch meals. 
+      Meals are posted weekly at the residence using a calendar.
       </Typography>
 </Box>
 <div>

@@ -40,22 +40,19 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    author: "@bkristastucchio",
+    img: "https://github.com/Daucro/Don-Sherrys/blob/Assets/don-sherrys/src/PhotoAssets/Cooking1.jpg?raw=true",
+    title: "Fried Chicken",
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    author: "@rollelflex_graphy726",
+    img: "https://github.com/Daucro/Don-Sherrys/blob/Assets/don-sherrys/src/PhotoAssets/Cooking2.jpg?raw=true",
+    title: "Steak",
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    author: "@helloimnik",
+    img: "https://github.com/Daucro/Don-Sherrys/blob/Assets/don-sherrys/src/PhotoAssets/Pie.jpg?raw=true",
+    title: "Pie",
   },
   {
     img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",

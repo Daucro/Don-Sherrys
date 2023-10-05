@@ -1,6 +1,11 @@
+import SliderShow from "@/app/components/carouselamenities"
+
+
 export default function Amenities () {
 
     return (
-   <h1>Hello World am I working yet</h1> 
+        <>
+        <SliderShow />
+        </>
     )
 }
