@@ -1,6 +1,7 @@
 th {
   text-align: center;
 }
+
 .Center {
   text-align: center;
   text-decoration: underline black 2px;
@@ -99,6 +100,7 @@ p {
   text-align: center;
   align-self: center;
   flex-basis: 25%;
+  color: black;
 }
 .BookingContainer3 {
   display: flex;
