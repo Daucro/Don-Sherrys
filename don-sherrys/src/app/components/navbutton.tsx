@@ -6,6 +6,7 @@ interface NavButtonProps {
   text: string;
   link: string;
 }
+
 export default function NavButton(props: NavButtonProps) {
   return (
     <Link href={`/${props.link}`}>

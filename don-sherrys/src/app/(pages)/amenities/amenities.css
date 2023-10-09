@@ -1,0 +1,14 @@
+.Amenities {
+  margin: 10px 7.6% 0px 7.6%;
+  padding-bottom: 15px;
+}
+.Paragraph {
+  margin: 0px 15% 0px 15%;
+}
+.CenterPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+}
