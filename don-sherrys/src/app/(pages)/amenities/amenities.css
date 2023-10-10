@@ -4,6 +4,8 @@
 }
 .Paragraph {
   margin: 0px 15% 0px 15%;
+  background-color: white;
+  padding: 2rem 0;
 }
 .CenterPage {
   display: flex;
@@ -11,4 +13,6 @@
   align-items: center;
   position: relative;
   padding: 2rem 0;
+  background-color: white;
+  margin: 0px 15% 0px 15%;
 }
