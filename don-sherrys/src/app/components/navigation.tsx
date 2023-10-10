@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,8 +9,10 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavButton from "./navbutton";
 import "../styling/carousel.css";
+import { useTheme } from "@mui/material/styles";
 
 export default function Navigation() {
+  const theme = useTheme();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -17,7 +20,7 @@ export default function Navigation() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            backgroundColor: "grey",
+            backgroundColor: theme.palette.primary.main,
           }}
         >
           <IconButton
@@ -35,8 +38,13 @@ export default function Navigation() {
             <NavButton text="Amenities" link="amenities" />
             <NavButton text="Location" link="location" />
             <NavButton text="Menu" link="menu" />
+<<<<<<< Updated upstream
             <Button className="LoginButton" color="inherit">
               Login
+=======
+            <Button className="BookNow" color="inherit">
+              Book Now
+>>>>>>> Stashed changes
             </Button>
           </Box>
         </Toolbar>

@@ -26,22 +26,27 @@ p {
   justify-content: center;
 }
 .NavButtonHeader:hover {
-  text-decoration: underline black;
+  text-decoration: underline #622a2e;
 }
 .NavButtonheader {
   background-color: grey;
 }
-.LoginButton:hover {
-  background-color: black;
-  text-decoration: underline white;
+.BookNow:hover {
+  background-color: yellow;
+  text-decoration: underline #408363;
 }
 .MenuIcon:hover {
   background-color: black;
 }
 .BookingContainer {
   display: flex;
+<<<<<<< Updated upstream
   margin: 5%;
   background-color: grey;
+=======
+  padding: 25px;
+  background-color: #622a2e;
+>>>>>>> Stashed changes
 }
 .BookingLeftTop {
   display: flex;
@@ -61,6 +66,7 @@ p {
   justify-content: center;
   margin: 10px;
 }
+<<<<<<< Updated upstream
 .BookingContainer2 {
   display: flex;
   justify-content: space-between;
@@ -77,6 +83,9 @@ p {
   display: flex;
   flex-basis: 25%;
 }
+=======
+
+>>>>>>> Stashed changes
 .BookingParagraph {
   text-align: center;
   align-self: center;
@@ -84,9 +93,15 @@ p {
 }
 .BookingContainer3 {
   display: flex;
+<<<<<<< Updated upstream
   margin: 5%;
   background-color: grey;
   padding: 15px;
+=======
+  background-color: #622a2e;
+  justify-content: space-evenly;
+  padding: 25px;
+>>>>>>> Stashed changes
 }
 .BookingContainer3Left {
   display: flex;
@@ -96,6 +111,19 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+<<<<<<< Updated upstream
+=======
+.BookingContainer3LeftImg {
+  width: 351px;
+  height: 351px;
+}
+.BookingContainer3RightImg {
+  width: 351px;
+  height: 351px;
+  position: relative;
+  left: 6.5%;
+}
+>>>>>>> Stashed changes
 .BookingContainer4 {
   margin: 5%;
   display: flex;
@@ -119,8 +147,11 @@ p {
 .GlobalFooter {
   display: flex;
   justify-content: space-evenly;
+<<<<<<< Updated upstream
   width: auto;
   background-color: grey;
+=======
+>>>>>>> Stashed changes
   padding: 15px;
   text-align: center;
 }

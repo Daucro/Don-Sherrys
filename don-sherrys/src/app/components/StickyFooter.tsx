@@ -1,12 +1,13 @@
 "use client";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import "../styling/carousel.css";
+import theme from "@/app/themeregistry";
 
 function Copyright() {
   return (
@@ -21,6 +22,7 @@ function Copyright() {
 }
 
 export default function StickyFooter() {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -35,10 +37,7 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: "auto",
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
+          backgroundColor: theme.palette.primary.main,
         }}
       >
         <Container>
