@@ -44,7 +44,6 @@ p {
 }
 .BookingContainer {
   display: flex;
-  background-color: grey;
   padding: 25px;
 }
 .BookingGlobalContainer {
@@ -80,8 +79,7 @@ p {
 }
 .BookingContainer2 {
   display: flex;
-  justify-content: space-evenly;
-  background-color: white;
+  background-color: #834240;
 }
 .BookingContainer2Left {
   display: flex;
@@ -105,8 +103,8 @@ p {
 }
 .BookingContainer3 {
   display: flex;
-  background-color: grey;
-  justify-content: space-evenly;
+  background-color: #836440;
+  padding: 25px;
 }
 .BookingContainer3Left {
   display: flex;
@@ -120,21 +118,19 @@ p {
   width: 351px;
   height: 351px;
   position: relative;
-  left: 1%;
+  left: 12.5%;
 }
 .BookingContainer3RightImg {
   width: 351px;
   height: 351px;
   position: relative;
-  left: 4.2%;
+  left: 8.3%;
 }
 .BookingContainer4 {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
-  background-color: grey;
-  padding: 1%;
-  margin: 1%;
+  padding: 15px;
 }
 .BookingContainer4Left {
   text-align: center;

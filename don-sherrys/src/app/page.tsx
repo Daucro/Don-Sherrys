@@ -52,43 +52,53 @@ export default function Home() {
             <img className="BookingPhoto" src="https://picsum.photos/714/414" />
           </div>
         </div>
-        <Container
+      </Container>
+      <Container
+        maxWidth="false"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          width: "1625px",
+          bgcolor: theme.palette.secondary.main,
+        }}
+      >
+        <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexBasis: "33",
+            position: "relative",
+            right: "2%",
+            paddingTop: "25px",
+            paddingBottom: "25px",
           }}
         >
-          <Box
-            sx={{
-              position: "relative",
-              right: "18.5%",
-              paddingTop: "25px",
-              paddingBottom: "25px",
-            }}
-          >
-            <img src="https://picsum.photos/714/351" />
-          </Box>
-          <Box
-            sx={{
-              position: "relative",
-              right: "9%",
-              paddingTop: "25px",
-            }}
-          >
-            <img src="https://picsum.photos/351/351" />
-          </Box>
-          <Box
-            sx={{
-              textAlign: "center",
-              alignSelf: "center",
-              position: "relative",
-              left: "6%",
-            }}
-          >
-            <p>What you need when you need it</p>
-          </Box>
-        </Container>
+          <img src="https://picsum.photos/714/351" />
+        </Box>
+        <Box
+          sx={{
+            position: "relative",
+            right: ".3%",
+            paddingTop: "25px",
+          }}
+        >
+          <img src="https://picsum.photos/351/351" />
+        </Box>
+        <Box
+          sx={{
+            textAlign: "center",
+            alignSelf: "center",
+            position: "relative",
+            left: "4%",
+          }}
+        >
+          <p>What you need when you need it</p>
+        </Box>
+      </Container>
+      <Container
+        maxWidth="false"
+        sx={{
+          width: "1625px",
+          bgcolor: theme.palette.primary.main,
+        }}
+      >
         <div className="BookingContainer3">
           <div className="BookingContainer3Left">
             <p className="BookingParagraph">
@@ -110,20 +120,28 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <div className="BookingContainer4">
-        <div className="BookingContainer4Left">
-          <img src="https://picsum.photos/574/430" />
-          <figcaption>Lorenia</figcaption>
+      <Container
+        maxWidth="false"
+        sx={{
+          width: "1625px",
+          bgcolor: theme.palette.secondary.main,
+        }}
+      >
+        <div className="BookingContainer4">
+          <div className="BookingContainer4Left">
+            <img src="https://picsum.photos/574/430" />
+            <figcaption>Lorenia</figcaption>
+          </div>
+          <div className="BookingContainer4Center">
+            <img src="https://picsum.photos/574/430" />
+            <figcaption>Divinia</figcaption>
+          </div>
+          <div className="BookingContainer4Right">
+            <img src="https://picsum.photos/574/430" />
+            <figcaption>Seleria</figcaption>
+          </div>
         </div>
-        <div className="BookingContainer4Center">
-          <img src="https://picsum.photos/574/430" />
-          <figcaption>Divinia</figcaption>
-        </div>
-        <div className="BookingContainer4Right">
-          <img src="https://picsum.photos/574/430" />
-          <figcaption>Seleria</figcaption>
-        </div>
-      </div>
+      </Container>
     </main>
   );
 }
