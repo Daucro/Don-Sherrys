@@ -58,8 +58,15 @@ export default function ThemeRegistry(props: any) {
   // Create a theme
   const theme = createTheme({
     palette: {
+      primary: {
+        main: "#836440",
+        light: "#c8b19b",
+        dark: "#5b3f27",
+      },
       secondary: {
-        main: "#FFA500", // Use the color code for orange[500] if you prefer
+        main: "#834240",
+        light: "#d6a29d",
+        dark: "#501d24",
       },
     },
   });

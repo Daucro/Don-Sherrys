@@ -45,6 +45,7 @@ p {
 .BookingContainer {
   display: flex;
   background-color: grey;
+  margin: 5%;
 }
 .BookingGlobalContainer {
   width: 1750px;
@@ -96,16 +97,18 @@ p {
 }
 
 .BookingParagraph {
-  display: flex;
   text-align: center;
   align-self: center;
   flex-basis: 25%;
-  color: black;
 }
 .BookingContainer3 {
   display: flex;
+  margin: 5%;
   background-color: grey;
+  padding: 15px;
+  background-color: #622a2e;
   justify-content: space-evenly;
+  padding: 25px;
 }
 .BookingContainer3Left {
   display: flex;
@@ -122,14 +125,16 @@ p {
 .BookingContainer3RightImg {
   width: 351px;
   height: 351px;
+  position: relative;
+  left: 6.5%;
 }
 .BookingContainer4 {
+  margin: 5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 15px;
   background-color: grey;
-  padding: 1%;
-  margin: 1%;
+  padding: 15px;
 }
 .BookingContainer4Left {
   text-align: center;

@@ -4,17 +4,27 @@ import styles from "./page.module.css";
 import SlideShow from "./components/carouselhome";
 import GFooter from "./components/StickyFooter";
 import StickyFooter from "./components/StickyFooter";
+import { useTheme } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
+import theme from "@/app/themeregistry";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 
 export default function Home() {
+  const theme = useTheme();
   return (
     <main>
       <SlideShow />
-      <h2 className="Center">SMALL TOWN GETAWAY WITH BIG ADVENTURE</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard
-      </p>
-      <div className="BookingGlobalContainer">
+      <Container
+        maxWidth="false"
+        sx={{
+          width: "1625px",
+          paddingTop: "25px",
+          paddingBottom: "25px",
+          bgcolor: theme.palette.primary.main,
+          marginTop: "10px",
+        }}
+      >
         <div className="BookingContainer">
           <div className="BookingLeftTop">
             <img src="https://picsum.photos/351/351" />
@@ -42,16 +52,43 @@ export default function Home() {
             <img className="BookingPhoto" src="https://picsum.photos/714/414" />
           </div>
         </div>
-        <div className="BookingContainer2">
-          <div className="BookingContainer2Left">
+        <Container
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexBasis: "33",
+          }}
+        >
+          <Box
+            sx={{
+              position: "relative",
+              right: "18.5%",
+              paddingTop: "25px",
+              paddingBottom: "25px",
+            }}
+          >
             <img src="https://picsum.photos/714/351" />
-          </div>
-          <div className="BookingContainer2Center">
+          </Box>
+          <Box
+            sx={{
+              position: "relative",
+              right: "9%",
+              paddingTop: "25px",
+            }}
+          >
             <img src="https://picsum.photos/351/351" />
-          </div>
-
-          <p className="BookingParagraph">What you need when you need it</p>
-        </div>
+          </Box>
+          <Box
+            sx={{
+              textAlign: "center",
+              alignSelf: "center",
+              position: "relative",
+              left: "6%",
+            }}
+          >
+            <p>What you need when you need it</p>
+          </Box>
+        </Container>
         <div className="BookingContainer3">
           <div className="BookingContainer3Left">
             <p className="BookingParagraph">
@@ -72,7 +109,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
       <div className="BookingContainer4">
         <div className="BookingContainer4Left">
           <img src="https://picsum.photos/574/430" />
