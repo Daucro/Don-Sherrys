@@ -1,3 +1,4 @@
+'use client'
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,8 +9,10 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavButton from "./navbutton";
 import "../styling/carousel.css";
+import { useTheme } from "@emotion/react";
 
 export default function Navigation() {
+   const theme = useTheme();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -17,7 +20,7 @@ export default function Navigation() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            backgroundColor: "grey",
+            bgcolor: theme.palette.primary.main,
           }}
         >
           <IconButton
@@ -30,12 +33,17 @@ export default function Navigation() {
             <MenuIcon className="MenuIcon" />
           </IconButton>
           <Box sx={{ display: "flex" }}>
-            <NavButton text="Home" link="home" />
+            <NavButton text="Home" link="/" />
             <NavButton text="About Us" link="about" />
             <NavButton text="Amenities" link="amenities" />
             <NavButton text="Location" link="location" />
             <NavButton text="Menu" link="menu" />
-            <Button className="LoginButton" color="inherit">
+            <Button sx={{
+              "&:hover": {
+          backgroundColor: theme.palette.secondary.main,
+          textDecoration: "underline #836440", // Styles to apply on hover
+        },
+            }} className="LoginButton" color="inherit">
               Book Now
             </Button>
           </Box>

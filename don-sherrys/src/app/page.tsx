@@ -14,7 +14,10 @@ export default function Home() {
   const theme = useTheme();
   return (
     <main>
+      <div className='BookingGlobalContainer'>
+
       <SlideShow />
+   
       <Container
         maxWidth="false"
         sx={{
@@ -142,6 +145,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      </div>
     </main>
   );
 }

@@ -25,7 +25,7 @@ export default function Amenities() {
               bgcolor: theme.palette.primary.main,
               paddingBottom: "25px",
               paddingTop: "25px",
-              marginTop: "15px",
+              marginTop: "10px",
               alignSelf: "center",
             }}
           >

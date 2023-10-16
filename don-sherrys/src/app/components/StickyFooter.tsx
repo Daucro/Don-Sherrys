@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -9,6 +9,7 @@ import Link from "@mui/material/Link";
 import "../styling/carousel.css";
 
 function Copyright() {
+  
   return (
     <Typography variant="body2" color="text.secondary">
       {"Copyright © "}
@@ -21,7 +22,20 @@ function Copyright() {
 }
 
 export default function StickyFooter() {
-  return (
+ const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#836440",
+        light: "#c8b19b",
+        dark: "#5b3f27",
+      },
+      secondary: {
+        main: "#834240",
+        light: "#d6a29d",
+        dark: "#501d24",
+      },
+    },
+  }); return (
     <Box
       sx={{
         display: "flex",
@@ -35,13 +49,13 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: "auto",
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
+          backgroundColor: theme.palette.primary.main,
         }}
       >
-        <Container>
+        <Container sx={{
+          backgroundColor: theme.palette.secondary.main,
+          pt: 2,
+        }}>
           <Typography variant="body1"></Typography>
           <div className="GlobalFooter">
             <div className="FooterLeft">

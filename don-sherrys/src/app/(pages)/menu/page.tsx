@@ -20,7 +20,7 @@ export default function Menu() {
             fontSize: "35px",
           }}
         >
-          It is <b>important</b> to us to provide food that is delicious and
+          It is <b>important</b> to us to provide food that is delicious, wholesome and
           meets your needs. In order to do so any dietary
           <b>restrictions</b> or <b>allergies</b> need to be disclosed at the
           time of booking your stay with us. This will give us the most amount

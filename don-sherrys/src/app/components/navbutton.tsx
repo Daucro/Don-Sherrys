@@ -1,4 +1,5 @@
-import { Typography } from "@mui/material";
+'use client'
+import { Typography, useTheme } from "@mui/material";
 import Link from "next/link";
 import "../styling/carousel.css";
 
@@ -8,6 +9,7 @@ interface NavButtonProps {
 }
 
 export default function NavButton(props: NavButtonProps) {
+  const theme = useTheme();
   return (
     <Link href={`/${props.link}`}>
       <Typography
@@ -18,7 +20,7 @@ export default function NavButton(props: NavButtonProps) {
           flexGrow: 1,
           margin: "2px",
           padding: "4px",
-          backgroundColor: "gray",
+          bgcolor: theme.palette.secondary.main,
         }}
       >
         {props.text}
