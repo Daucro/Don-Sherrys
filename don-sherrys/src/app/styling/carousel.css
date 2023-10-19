@@ -128,14 +128,11 @@ p {
 .BookingContainer4 {
   display: flex;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 5px;
   padding: 15px;
 }
 .BookingContainer4Left {
   text-align: center;
-  font-size: 24px;
-}
-.BookingContainer4Center {
   font-size: 24px;
 }
 .BookingContainer4Right {
@@ -149,8 +146,10 @@ p {
   background-color: #836440;
   padding: 15px;
   text-align: center;
-  font-size: 24px ;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 24px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .FooterLeft {
   text-align: left;
@@ -160,4 +159,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.SocialMedia {
+  gap: 5px;
 }

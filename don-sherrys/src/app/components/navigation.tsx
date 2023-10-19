@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -9,10 +9,10 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavButton from "./navbutton";
 import "../styling/carousel.css";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material/styles";
 
 export default function Navigation() {
-   const theme = useTheme();
+  const theme = useTheme();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -20,7 +20,7 @@ export default function Navigation() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            bgcolor: theme.palette.primary.main,
+            backgroundColor: theme.palette.primary.main,
           }}
         >
           <IconButton
@@ -36,14 +36,18 @@ export default function Navigation() {
             <NavButton text="Home" link="/" />
             <NavButton text="About Us" link="about" />
             <NavButton text="Amenities" link="amenities" />
-            <NavButton text="Location" link="location" />
+            <NavButton text="Rooms" link="rooms" />
             <NavButton text="Menu" link="menu" />
-            <Button sx={{
-              "&:hover": {
-          backgroundColor: theme.palette.secondary.main,
-          textDecoration: "underline #836440", // Styles to apply on hover
-        },
-            }} className="LoginButton" color="inherit">
+            <Button
+              sx={{
+                "&:hover": {
+                  backgroundColor: theme.palette.secondary.main,
+                  textDecoration: "underline #836440", // Styles to apply on hover
+                },
+              }}
+              className="LoginButton"
+              color="inherit"
+            >
               Book Now
             </Button>
           </Box>

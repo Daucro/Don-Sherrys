@@ -9,7 +9,6 @@ import Link from "@mui/material/Link";
 import "../styling/carousel.css";
 
 function Copyright() {
-  
   return (
     <Typography variant="body2" color="text.secondary">
       {"Copyright © "}
@@ -22,7 +21,7 @@ function Copyright() {
 }
 
 export default function StickyFooter() {
- const theme = createTheme({
+  const theme = createTheme({
     palette: {
       primary: {
         main: "#836440",
@@ -35,7 +34,8 @@ export default function StickyFooter() {
         dark: "#501d24",
       },
     },
-  }); return (
+  });
+  return (
     <Box
       sx={{
         display: "flex",
@@ -52,10 +52,12 @@ export default function StickyFooter() {
           backgroundColor: theme.palette.primary.main,
         }}
       >
-        <Container sx={{
-          backgroundColor: theme.palette.secondary.main,
-          pt: 2,
-        }}>
+        <Container
+          sx={{
+            backgroundColor: theme.palette.secondary.main,
+            pt: 2,
+          }}
+        >
           <Typography variant="body1"></Typography>
           <div className="GlobalFooter">
             <div className="FooterLeft">
@@ -93,14 +95,19 @@ export default function StickyFooter() {
               <div>
                 <Typography variant="h6">Stay Connected</Typography>
               </div>
-              <div className="Socialmedia">
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                }}
+              >
                 <a href="https://www.instagram.com/">
                   <img src="https://picsum.photos/50" />
                 </a>
                 <a href="https://twitter.com/">
                   <img src="https://picsum.photos/50" />
                 </a>
-              </div>
+              </Box>
             </div>
           </div>
           <Copyright />

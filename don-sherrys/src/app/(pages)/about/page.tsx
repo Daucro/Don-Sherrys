@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import "../about/about.css";
 import { useTheme } from "@mui/material";
-import { ThemeProvider } from "@emotion/react";
 import theme from "@/app/themeregistry";
 
 export default function SimpleContainer() {
@@ -22,7 +21,7 @@ export default function SimpleContainer() {
           </Typography>
           <Box
             sx={{
-              bgcolor: theme.palette.secondary.main,
+              bgcolor: theme.palette.primary.main,
               height: "100",
               padding: "25px",
             }}
