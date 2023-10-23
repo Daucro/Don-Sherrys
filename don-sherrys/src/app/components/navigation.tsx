@@ -39,6 +39,7 @@ export default function Navigation() {
             <NavButton text="Rooms" link="rooms" />
             <NavButton text="Menu" link="menu" />
             <Button
+              href="signin"
               sx={{
                 "&:hover": {
                   backgroundColor: theme.palette.secondary.main,
