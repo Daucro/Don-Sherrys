@@ -43,7 +43,7 @@ export default function Navigation() {
               sx={{
                 "&:hover": {
                   backgroundColor: theme.palette.secondary.main,
-                  textDecoration: "underline #836440", // Styles to apply on hover
+                  textDecoration: "underline #836440",
                 },
               }}
               className="LoginButton"
