@@ -63,9 +63,11 @@ export default function PasswordModal() {
                 required
                 fullWidth
                 id="email"
-                value={email}
                 label="Email Address"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                autoFocus
                 autoComplete="email"
               ></TextField>
               <Typography
