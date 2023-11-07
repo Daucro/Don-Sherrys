@@ -21,6 +21,11 @@ interface Cats {
   nameOfGroup: string;
 }
 
+interface Hello {
+  message: number;
+  name: string;
+}
+
 export default function LogIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -34,6 +39,7 @@ export default function LogIn() {
   const [cats, setCats] = useState<Cats | undefined>(undefined);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [hello, setHello] = useState<Hello | undefined>(undefined);
 
   React.useEffect(() => {
     const fetchCats = async () => {
@@ -47,6 +53,20 @@ export default function LogIn() {
     };
 
     fetchCats();
+  }, []);
+
+  React.useEffect(() => {
+    const fetchHello = async () => {
+      const response = await fetch("http://localhost:3000/cat", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const helloTimes = await response.json();
+      setHello(helloTimes);
+    };
+
+    fetchHello();
   }, []);
 
   return (
@@ -135,6 +155,10 @@ export default function LogIn() {
         Test Button
       </Button>
       {cats ? cats.numberOfCats : null}
+      <Button>{hello ? hello.name : null}</Button>
     </Container>
   );
+}
+function AppService() {
+  throw new Error("Function not implemented.");
 }
