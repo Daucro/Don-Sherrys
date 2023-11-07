@@ -12,9 +12,14 @@ import {
   Typography,
 } from "@mui/material";
 import Paper from "@mui/material/Paper";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RegisterModal from "@/app/components/register";
 import PasswordModal from "@/app/components/forgotpassword";
+
+interface Cats {
+  numberOfCats: number;
+  nameOfGroup: string;
+}
 
 export default function LogIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -26,8 +31,23 @@ export default function LogIn() {
     });
   };
   const theme = useTheme();
+  const [cats, setCats] = useState<Cats | undefined>(undefined);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  React.useEffect(() => {
+    const fetchCats = async () => {
+      const response = await fetch("http://localhost:3000/cat", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const catsData = await response.json();
+      setCats(catsData);
+    };
+
+    fetchCats();
+  }, []);
 
   return (
     <Container
@@ -114,6 +134,7 @@ export default function LogIn() {
       >
         Test Button
       </Button>
+      {cats ? cats.numberOfCats : null}
     </Container>
   );
 }
