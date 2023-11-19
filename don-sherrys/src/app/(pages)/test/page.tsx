@@ -24,6 +24,7 @@ interface Cats {
 interface Hello {
   message: number;
   name: string;
+  last: string;
 }
 
 export default function LogIn() {
