@@ -15,6 +15,7 @@ import Paper from "@mui/material/Paper";
 import React, { useEffect, useState } from "react";
 import RegisterModal from "@/app/components/register";
 import PasswordModal from "@/app/components/forgotpassword";
+import { useApi } from "@/app/hooks/use-api";
 
 interface Cats {
   numberOfCats: number;
@@ -40,36 +41,10 @@ export default function LogIn() {
   const [cats, setCats] = useState<Cats | undefined>(undefined);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [hello, setHello] = useState<Hello | undefined>(undefined);
 
-  React.useEffect(() => {
-    const fetchCats = async () => {
-      const response = await fetch("http://localhost:3000/cat", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const catsData = await response.json();
-      setCats(catsData);
-    };
-
-    fetchCats();
-  }, []);
-
-  React.useEffect(() => {
-    const fetchHello = async () => {
-      const response = await fetch("http://localhost:3000/cat", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const helloTimes = await response.json();
-      setHello(helloTimes);
-    };
-
-    fetchHello();
-  }, []);
-
+  const { data } = useApi<any>("/cat");
+  const cat = useApi<any>("/cat");
+  const hello = useApi<any>("/hello");
   return (
     <Container
       maxWidth={"xl"}
@@ -156,7 +131,8 @@ export default function LogIn() {
         Test Button
       </Button>
       {cats ? cats.numberOfCats : null}
-      <Button>{hello ? hello.name : null}</Button>
+      {hello.data ? hello.data.name : null}
+      {cat.data ? cat.data.numberOfCats : null}
     </Container>
   );
 }
