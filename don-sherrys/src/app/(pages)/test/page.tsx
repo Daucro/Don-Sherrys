@@ -27,6 +27,11 @@ interface Hello {
   name: string;
   last: string;
 }
+interface Customers {
+  email: string;
+  phone: string;
+  id: number;
+}
 
 export default function LogIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
